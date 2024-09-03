@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    
+    <!-- Header section containing the title and task input form -->
+    <header>
+        <h1>To-do List</h1>
+        <!-- Form for adding a new task -->
+        <form id="new-task-form">
+            <!-- Input field for typing a new task -->
+            <input 
+                type="text" 
+                name="new-task-input" 
+                id="new-task-input" 
+                placeholder="Add a new task" />
+            <!-- Submit button for adding the task -->
+            <input 
+                type="submit"
+                id="new-task-submit" 
+                value="Add task" />
+        </form>
+    </header>
+
+    <!-- Main content area where tasks will be displayed -->
+    <main>
+        <!-- Section to display saved tasks -->
+        <section class="task-list">
+            <h2>Saved Tasks</h2>
+
+            <!-- Container for the task items -->
+            <div id="tasks">
+
+                <!-- 
+                Template for a task item (commented out as an example)
+                <div class="task">
+                    <div class="content">
+                        <input 
+                            type="text" 
+                            class="text" 
+                            value="A new task"
+                            readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> 
+                -->
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to the external JavaScript file for adding functionality -->
+    <script src="main.js"></script>
+</body>
+</html>
